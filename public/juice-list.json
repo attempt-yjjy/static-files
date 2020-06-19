@@ -1988,6 +1988,16 @@
         "JuicePrice":10,
         "BelongTo":"曲奇饼",
         "imgClass":"qqb"
+    },
+    {
+        "JuiceId":200,
+        "JuiceName":"回头客曲奇",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"19",
+        "discount":1,
+        "JuicePrice":19,
+        "BelongTo":"曲奇饼",
+        "imgClass":"qqb"
     }
 
 ]
