@@ -6,7 +6,8 @@
         "TodaySales":"100",
         "discount":1,
         "JuicePrice":32,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":2,
@@ -15,7 +16,8 @@
         "TodaySales":"100",
         "discount":0.4,
         "JuicePrice":14,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":3,
@@ -24,7 +26,8 @@
         "TodaySales":"10",
         "discount":0.3,
         "JuicePrice":24,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":4,
@@ -33,7 +36,8 @@
         "TodaySales":"100",
         "discount":0.9,
         "JuicePrice":25,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":5,
@@ -42,7 +46,8 @@
         "TodaySales":"100",
         "discount":0.5,
         "JuicePrice":25,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":6,
@@ -51,7 +56,8 @@
         "TodaySales":"100",
         "discount":0.76,
         "JuicePrice":21,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":7,
@@ -60,7 +66,8 @@
         "TodaySales":"100",
         "discount":0.45,
         "JuicePrice":25,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":8,
@@ -69,7 +76,8 @@
         "TodaySales":"100",
         "discount":0.73,
         "JuicePrice":17,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":9,
@@ -78,7 +86,8 @@
         "TodaySales":"100",
         "discount":0.43,
         "JuicePrice":16,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":10,
@@ -87,7 +96,8 @@
         "TodaySales":"10",
         "discount":0.3,
         "JuicePrice":24,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":11,
@@ -96,7 +106,8 @@
         "TodaySales":"100",
         "discount":0.91,
         "JuicePrice":9,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":12,
@@ -105,7 +116,8 @@
         "TodaySales":"100",
         "discount":0.53,
         "JuicePrice":25.5,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":13,
@@ -114,7 +126,8 @@
         "TodaySales":"100",
         "discount":0.76,
         "JuicePrice":11,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
     },
     {
         "JuiceId":14,
@@ -123,6 +136,147 @@
         "TodaySales":"100",
         "discount":0.45,
         "JuicePrice":15.5,
-        "BelongTo":"奶昔"
+        "BelongTo":"奶昔",
+        "imgClass":"nx"
+    },
+    {
+        "JuiceId":15,
+        "JuiceName":"草莓汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"100",
+        "discount":0.5,
+        "JuicePrice":15,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":16,
+        "JuiceName":"蓝莓汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"108",
+        "discount":0.2,
+        "JuicePrice":19,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":17,
+        "JuiceName":"西瓜汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"123",
+        "discount":0.38,
+        "JuicePrice":24,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":18,
+        "JuiceName":"香蕉汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"99",
+        "discount":0.91,
+        "JuicePrice":25,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":19,
+        "JuiceName":"椰汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"100",
+        "discount":0.52,
+        "JuicePrice":22,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":20,
+        "JuiceName":"芒果汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"12",
+        "discount":0.76,
+        "JuicePrice":18,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":21,
+        "JuiceName":"菠萝汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"78",
+        "discount":0.54,
+        "JuicePrice":21,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":22,
+        "JuiceName":"苹果汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"100",
+        "discount":0.73,
+        "JuicePrice":23,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":23,
+        "JuiceName":"荔枝汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"100",
+        "discount":0.43,
+        "JuicePrice":24,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":24,
+        "JuiceName":"葡萄汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"102",
+        "discount":0.42,
+        "JuicePrice":22,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":25,
+        "JuiceName":"樱桃汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"101",
+        "discount":0.23,
+        "JuicePrice":14,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":26,
+        "JuiceName":"桑葚汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"100",
+        "discount":0.52,
+        "JuicePrice":24,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":27,
+        "JuiceName":"桃汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"34",
+        "discount":0.23,
+        "JuicePrice":5,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
+    },
+    {
+        "JuiceId":28,
+        "JuiceName":"百香果汁",
+        "JuiceSrc":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1981475166,4029771665&fm=26&gp=0.jpg",
+        "TodaySales":"24",
+        "discount":0.42,
+        "JuicePrice":19,
+        "BelongTo":"果汁",
+        "imgClass":"gz"
     }
 ]
