@@ -8,7 +8,7 @@ app.use('/',(request,response,to)=>{
     to()
 })
 
-app.use('/public',express.static('./public'))
+app.use('/public',express.static('../public'))
 
 app.listen(8077,()=>{
     console.log("服务启动成功")
