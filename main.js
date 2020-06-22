@@ -2,13 +2,18 @@ let express = require('express')
 
 let app = express()
 
-app.use('/',(request,response,to)=>{
+app.use('/',(request,response,next)=>{
     console.log(request.url)
     response.setHeader('Access-Control-Allow-Origin', '*');
-    to()
+    next()
 })
 
 app.use('/public',express.static('../public'))
+
+app.post('/order/submit',(request,response,next)=>{
+    console.log(request.query)
+    next()
+})
 
 app.listen(80,()=>{
     console.log("服务启动成功")
