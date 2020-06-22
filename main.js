@@ -11,7 +11,7 @@ app.use('/',(request,response,next)=>{
 app.use('/public',express.static('../public'))
 
 app.post('/order/submit',(request,response,next)=>{
-    console.log(request.query)
+    console.log(request.body)
     next()
 })
 
