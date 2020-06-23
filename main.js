@@ -9,7 +9,7 @@ let app = express()
 app.use(bodyp.urlencoded({ extended: false,limit:20*1024})); //extended 拓展模式  limit 最大接收数据
 
 app.use('/',(request,response,next)=>{
-    console.log(request.url)
+    console.log(request.host)
     response.setHeader('Access-Control-Allow-Origin', '*');
     next()
 })
@@ -22,7 +22,6 @@ app.post('/order/submit',(request,response,next)=>{
         JuiceList:JSON.parse(request.body.data),
         OrderId:new Date().getTime()
     }
-    console.log(tempOrder)
     new Promise((resolve,rejected)=>{
         fileoperate.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
             if(!error){
