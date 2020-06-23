@@ -1,3 +1,1 @@
-﻿{"JuiceList":[{"JuiceId":38,"JuiceName":"甜黑茶","TodaySales":"10","discount":0.32,"JuicePrice":16,"BelongTo":"淡茶","imgClass":"dc","count":1},{"JuiceId":39,"JuiceName":"青黄茶","TodaySales":"15","discount":0.91,"JuicePrice":15,"BelongTo":"淡茶","imgClass":"dc","count":1}],"OrderId":1592919672430,"finished":0}
-{"JuiceList":[{"JuiceId":44,"JuiceName":"南山红","TodaySales":"25","discount":0.71,"JuicePrice":25,"BelongTo":"淡茶","imgClass":"dc","count":1}],"OrderId":1592919676230,"finished":0}
-{"JuiceList":[{"JuiceId":41,"JuiceName":"普洱茶","TodaySales":"23","discount":0.76,"JuicePrice":24,"BelongTo":"淡茶","imgClass":"dc","count":1}],"OrderId":1592919680866,"finished":0}
+﻿

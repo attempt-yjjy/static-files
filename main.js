@@ -23,7 +23,7 @@ app.post('/order/submit',(request,response,next)=>{
         finished:"0"
     }
     new Promise((resolve,rejected)=>{
-        filewrite.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
+        filewrite.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '####',(error)=>{
             if(!error){
                 resolve({
                     success:true,
@@ -61,7 +61,7 @@ app.get('/order/getall',function(request,response){
         })
     }).then(result=>{
         if(result.success){
-            let orderstrArray = result.data.split('\n')
+            let orderstrArray = result.data.split('####')
             orderstrArray = orderstrArray.filter(item=>{
                 return (item.trim() == '' || !item)?false:true
             })
