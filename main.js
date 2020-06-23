@@ -19,8 +19,8 @@ app.use('/public',express.static('../public'))
 app.post('/order/submit',(request,response,next)=>{
     let tempOrder = {
         JuiceList:JSON.parse(request.body.data),
-        OrderId:new Date().getTime(),
-        finished:0
+        OrderId:"" + new Date().getTime(),
+        finished:"0"
     }
     new Promise((resolve,rejected)=>{
         filewrite.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
@@ -62,26 +62,15 @@ app.get('/order/getall',function(request,response){
     }).then(result=>{
         if(result.success){
             let orderstrArray = result.data.split('\n')
-            try{
-                orderstrArray = orderstrArray.filter(item=>{
-                    return (item.trim() == '' || !item)?false:true
-                })
-            }catch(exception){
-                console.log("filter方法处出问题")
-            }
-            let orderArray;
-            try{
-                orderArray = orderstrArray.map(item=>{
-                    console.log(item)
-                    return JSON.parse(item)
-                })
-            }catch(exception){
-                console.log("map方法处出问题")
-            }
+            orderstrArray = orderstrArray.filter(item=>{
+                return (item.trim() == '' || !item)?false:true
+            })
+    
             response.send({
                 success:true,
-                orderArray
+                orderstrArray
             })
+            console.log("读取成功")
         }
         else{
             response.send({
