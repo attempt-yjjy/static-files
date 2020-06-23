@@ -69,7 +69,7 @@ app.get('/order/getall',function(request,response){
             response.send({
                 success:true,
                 orderstrArray
-            })
+            }) 
             console.log("读取成功")
         }
         else{
