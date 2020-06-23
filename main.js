@@ -61,7 +61,10 @@ app.get('/order/getall',function(request,response){
         })
     }).then(result=>{
         if(result.success){
-            let orderArray = result.data.split('\n')
+            let orderstrArray = result.data.split('\n')
+            let orderArray = orderstrArray.map(item=>{
+                return JSON.stringify(item)
+            })
             response.send({
                 success:true,
                 orderArray
