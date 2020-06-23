@@ -72,6 +72,7 @@ app.get('/order/getall',function(request,response){
 
             try{
                 let orderArray = orderstrArray.map(item=>{
+                    console.log(item)
                     return JSON.parse(item)
                 })
             }catch(exception){
