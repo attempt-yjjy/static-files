@@ -20,7 +20,7 @@ app.post('/order/submit',(request,response,next)=>{
     let tempOrder = {
         JuiceList:JSON.parse(request.body.data),
         OrderId:new Date().getTime(),
-        finished:false
+        finished:0
     }
     new Promise((resolve,rejected)=>{
         filewrite.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
@@ -69,9 +69,9 @@ app.get('/order/getall',function(request,response){
             }catch(exception){
                 console.log("filter方法处出问题")
             }
-
+            let orderArray;
             try{
-                let orderArray = orderstrArray.map(item=>{
+                orderArray = orderstrArray.map(item=>{
                     console.log(item)
                     return JSON.parse(item)
                 })
