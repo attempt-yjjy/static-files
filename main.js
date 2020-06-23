@@ -9,7 +9,7 @@ let app = express()
 app.use(bodyp.urlencoded({ extended: false,limit:20*1024})); //extended 拓展模式  limit 最大接收数据
 
 app.use('/',(request,response,next)=>{
-    console.log(request.host)
+    console.log(request.originalUrl)
     response.setHeader('Access-Control-Allow-Origin', '*');
     next()
 })
