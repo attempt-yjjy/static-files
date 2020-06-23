@@ -20,7 +20,8 @@ app.use('/public',express.static('../public'))
 app.post('/order/submit',(request,response,next)=>{
     let tempOrder = {
         JuiceList:JSON.parse(request.body.data),
-        OrderId:new Date().getTime()
+        OrderId:new Date().getTime(),
+        finished:false
     }
     new Promise((resolve,rejected)=>{
         filewrite.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
