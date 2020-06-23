@@ -10,7 +10,6 @@ let app = express()
 app.use(bodyp.urlencoded({ extended: false,limit:20*1024})); //extended 拓展模式  limit 最大接收数据
 
 app.use('/',(request,response,next)=>{
-    console.log(request.originalUrl)
     response.setHeader('Access-Control-Allow-Origin', '*');
     next()
 })
@@ -63,12 +62,21 @@ app.get('/order/getall',function(request,response){
     }).then(result=>{
         if(result.success){
             let orderstrArray = result.data.split('\n')
-            orderstrArray = orderstrArray.filter(item=>{
-                return (item.trim() == '' || !item)?false:true
-            })
-            let orderArray = orderstrArray.map(item=>{
-                return JSON.parse(item)
-            })
+            try{
+                orderstrArray = orderstrArray.filter(item=>{
+                    return (item.trim() == '' || !item)?false:true
+                })
+            }catch(exception){
+                console.log("filter方法处出问题")
+            }
+
+            try{
+                let orderArray = orderstrArray.map(item=>{
+                    return JSON.parse(item)
+                })
+            }catch(exception){
+                console.log("map方法处出问题")
+            }
             response.send({
                 success:true,
                 orderArray
