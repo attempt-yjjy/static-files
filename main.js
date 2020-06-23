@@ -1,7 +1,8 @@
 let express = require('express')
 var bodyp=require('body-parser');
 
-let fileoperate = require('./fileopreate/filewrite.js')
+let filewrite = require('./fileopreate/filewrite.js')
+let fileread = require('./fileopreate/fileread.js')
 //post中间件接收数据
 
 let app = express()
@@ -22,7 +23,7 @@ app.post('/order/submit',(request,response,next)=>{
         OrderId:new Date().getTime()
     }
     new Promise((resolve,rejected)=>{
-        fileoperate.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
+        filewrite.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
             if(!error){
                 resolve({
                     success:true,
@@ -40,6 +41,39 @@ app.post('/order/submit',(request,response,next)=>{
         response.send(result)
     })
 
+})
+
+app.get('/order/getall',function(request,response){
+    new Promise((resolve,rejected)=>{
+        fileread.readEveryLine('./database/orderhistory.txt',(err,data)=>{
+            if(err){
+                resolve({
+                    success:false,
+                    err
+                })
+            }
+            else{
+                resolve({
+                    success:true,
+                    data
+                })
+            }
+        })
+    }).then(result=>{
+        if(result.success){
+            let orderArray = result.data.split('\n')
+            response.send({
+                success:true,
+                orderArray
+            })
+        }
+        else{
+            response.send({
+                success:false,
+                error:result.err
+            })
+        }
+    })
 })
 
 app.listen(8011,()=>{
