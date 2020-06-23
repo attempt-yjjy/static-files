@@ -1,5 +1,7 @@
 let express = require('express')
 var bodyp=require('body-parser');
+
+let fileoperate = require('./fileopreate/filewrite.js')
 //post中间件接收数据
 
 let app = express()
@@ -15,10 +17,33 @@ app.use('/',(request,response,next)=>{
 app.use('/public',express.static('../public'))
 
 app.post('/order/submit',(request,response,next)=>{
-    console.log(request.body)
-    next()
+    console.log(request.body.data)
+    let tempOrder = {
+        JuiceList:JSON.parse(request.body.data),
+        OrderId:new Date().getTime()
+    }
+    console.log(tempOrder)
+    new Promise((resolve,rejected)=>{
+        fileoperate.fileAppend('./database/orderhistory.txt',JSON.stringify(tempOrder) + '\n',(error)=>{
+            if(!error){
+                resolve({
+                    success:true,
+                    OrderId:tempOrder.OrderId
+                })
+            }
+            else{
+                resolve({
+                    success:false,
+                    OrderId:tempOrder.OrderId
+                })
+            }
+        })
+    }).then(result=>{
+        response.send(result)
+    })
+
 })
 
-app.listen(80,()=>{
+app.listen(8011,()=>{
     console.log("服务启动成功")
 })
