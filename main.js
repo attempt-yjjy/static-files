@@ -17,7 +17,6 @@ app.use('/',(request,response,next)=>{
 app.use('/public',express.static('../public'))
 
 app.post('/order/submit',(request,response,next)=>{
-    console.log(request.body.data)
     let tempOrder = {
         JuiceList:JSON.parse(request.body.data),
         OrderId:new Date().getTime()
